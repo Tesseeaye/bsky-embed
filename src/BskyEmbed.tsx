@@ -72,15 +72,15 @@ const BskyEmbed: Component<Props> = ({
       </style>
       <section class={`${mode} max-w-screen-sm mx-auto space-y-6`}>
         {isLoading() && Array.from(Array(limit)).map(() =>
-          <article class="flex gap-2 p-4 border-b border-slate-300 dark:border-slate-800 animate-pulse">
-            <div class="bg-slate-200 w-14 h-14 rounded-full dark:bg-slate-800"></div>
+          <article class="flex gap-2 px-10 py-6 bg-zinc-50 rounded-lg drop-shadow-sm border border-gray-200 animate-pulse">
+            <div class="bg-slate-300 w-12 h-12 rounded-full dark:bg-slate-800"></div>
             <div class="flex-1 space-y-2 py-1">
               <div class="grid grid-cols-4 gap-4">
-                <div class="h-2 bg-slate-200 rounded col-span-2 dark:bg-slate-800"></div>
+                <div class="h-2 bg-slate-300 rounded col-span-2 dark:bg-slate-800"></div>
               </div>
-              <div class="h-2 bg-slate-200 rounded dark:bg-slate-800"></div>
-              <div class="h-2 bg-slate-200 rounded dark:bg-slate-800"></div>
-              <div class="h-2 bg-slate-200 rounded dark:bg-slate-800"></div>
+              <div class="h-2 bg-slate-300 rounded dark:bg-slate-800"></div>
+              <div class="h-2 bg-slate-300 rounded dark:bg-slate-800"></div>
+              <div class="h-2 bg-slate-300 rounded dark:bg-slate-800"></div>
             </div>
           </article>
         )}
@@ -90,7 +90,7 @@ const BskyEmbed: Component<Props> = ({
             <span class="text-sm text-slate-500 font-semibold">Reposted by {post.repostBy}</span>
           </p> }
           <div class="flex gap-2">
-            <img src={post.avatar} alt="profile picture" class="w-14 h-14 rounded-full border border-gray-200 drop-shadow-sm" />
+            <img src={post.avatar} alt="profile picture" class="w-12 h-12 rounded-full border border-gray-200 drop-shadow-sm" />
             <div>
               <div class="flex max-w-[calc(100vw-96px)] items-center">
                 <a href={`https://bsky.app/profile/${post.handle}`} class="text-ellipsis overflow-hidden whitespace-nowrap hover:underline dark:text-white">
