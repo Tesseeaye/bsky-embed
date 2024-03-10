@@ -72,7 +72,7 @@ const BskyEmbed: Component<Props> = ({
       </style>
       <section class={`${mode} max-w-screen-sm mx-auto space-y-6`}>
         {isLoading() && Array.from(Array(limit)).map(() =>
-          <article class="flex gap-2 px-10 py-6 bg-zinc-50 rounded-lg drop-shadow-sm border border-gray-200 animate-pulse">
+          <article class="flex gap-2 px-10 py-4 bg-zinc-50 rounded-lg drop-shadow-sm border border-gray-200 animate-pulse">
             <div class="bg-slate-300 w-12 h-12 rounded-full dark:bg-slate-800"></div>
             <div class="flex-1 space-y-2 py-1">
               <div class="grid grid-cols-4 gap-4">
